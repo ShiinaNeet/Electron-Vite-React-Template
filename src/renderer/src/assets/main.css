@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0256fd08;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.hover-item:hover .MuiListItemIcon-root,
+.hover-item:hover .MuiListItemText-root {
+  color: #1e40af;
+  font-weight: bolder;
+}

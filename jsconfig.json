@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@renderer/*": ["src/renderer/src/*"],
+      "@components/*": ["src/renderer/src/components/*"],
+      "@auth/*": ["src/renderer/src/auth/*"],
+      "@src/*": ["src/*"]
+    }
+  }
+}
