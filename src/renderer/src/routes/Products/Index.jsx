@@ -55,13 +55,13 @@ function Index() {
   const getData = async () => {
     setIsLoading(true)
     try {
-      const response = await window.api.request('/products', {
-        method: 'GET'
-      })
-      // const response = await window.api.request('/user/paginated/student?skip=0&limit=10', {
+      // const response = await window.api.request('/products', {
       //   method: 'GET'
       // })
-      setRows(response.data) // Use the response directly since it's already resolved
+      const response = await window.api.request('/user/paginated/student?skip=0&limit=10', {
+        method: 'GET'
+      })
+      // setRows(response.data) // Use the response directly since it's already resolved
       // console.log('Products Response:', response)
     } catch (error) {
       console.error('Error fetching data:', error.message || error) // Log the error message or full object
